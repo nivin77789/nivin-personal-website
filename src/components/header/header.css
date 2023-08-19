@@ -1,3 +1,64 @@
+.loader {
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  width: 300px;
+  height: 100px;
+  border-radius: 100px;
+  border: 8px solid rgba(255, 255, 255, 0.1);
+  -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.1), #000000 90%);
+  transform-origin: 50% 60%;
+  transform: perspective(200px) rotateX(66deg);
+  animation: spinner-wiggle 1s infinite;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  margin: -4px;
+  box-sizing: inherit;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  opacity: 0.05;
+  border: inherit;
+  border-color: transparent;
+  animation: spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite,
+    spinner-fade 1.2s linear infinite;
+}
+
+.loader:before {
+  border-top-color: #ffffff;
+}
+
+.loader:after {
+  border-top-color: #f0d175;
+  animation-delay: 0.3s;
+}
+
+@keyframes spinner-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-fade {
+  20% {
+    opacity: 0.1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0.1;
+  }
+}
+
+/* ==================== header ===================== */
 header {
   height: 100vh;
   padding-top: 2rem;
@@ -28,7 +89,7 @@ header {
   gap: 0.8rem;
   position: absolute;
   left: 0;
-  bottom: 3rem;
+  bottom: 22rem;
 }
 
 .header__socials::after {
@@ -40,16 +101,18 @@ header {
 
 /* ==================== ME IMAGE ===================== */
 .me {
-  background: linear-gradient(var(--color-primary), transparent);
-  width: 22rem;
-  height: 30rem;
+  height: 45rem;
+}
+.me-top {
   left: calc(50% - 11rem);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  padding: 5rem 1.5rem 0rem 1.5rem;
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 22rem;
+  height: 30rem;
 }
-
 /* ==================== SCROLL DOWN ===================== */
 .scroll__down {
   position: absolute;

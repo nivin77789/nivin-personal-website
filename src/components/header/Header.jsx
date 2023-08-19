@@ -20,7 +20,12 @@ const Header = () => {
         </div>
 
         <div className="me">
-          <img src={ME} alt="me" />
+          <div className="me-top">
+            {" "}
+            <img src={ME} alt="me" />
+          </div>
+
+          <div className="loader"></div>
         </div>
       </div>
     </header>
