@@ -9,3 +9,4 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ![Personal Portifolio](https://user-images.githubusercontent.com/68878437/167522722-1cf21787-9ee4-4222-a018-4bdf0d33ecd7.png)
+# nivin-personal-website
