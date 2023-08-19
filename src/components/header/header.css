@@ -71,6 +71,7 @@ header {
   justify-content: space-around;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 /* ==================== CTA ===================== */
