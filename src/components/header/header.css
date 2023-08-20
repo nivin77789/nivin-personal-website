@@ -26,7 +26,7 @@
   border: inherit;
   border-color: transparent;
   animation: spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite,
-    spinner-fade 1.2s linear infinite;
+    spinner-fade 1s linear infinite;
 }
 
 .loader:before {
@@ -58,17 +58,98 @@
   }
 }
 
+/* ==================== nav loader ===================== */
+.looader {
+  position: relative;
+  width: 250px;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  overflow: hidden;
+}
+
+.looader::after {
+  content: "";
+  position: absolute;
+  translate: -200px 0;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #212121, transparent);
+  animation: slide 0.8s infinite;
+}
+
+@keyframes slide {
+  100% {
+    translate: 300px 0;
+  }
+}
+/* ==================== navbar top ===================== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 30px;
+  width: 55%;
+  background-color: var(--color-bg-variant);
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  text-align: center;
+  padding: 12px;
+  color: rgba(214, 214, 214, 0.736);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  height: 35px;
+}
+
+/* Current/active navbar link */
+.actives {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  height: 35px;
+  background-color: var(--color-primary);
+}
+.actives p {
+  color: #000;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
 /* ==================== header ===================== */
 header {
   height: 100vh;
   padding-top: 2rem;
   overflow: hidden;
 }
-
-.header__container {
+.hed {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.header__container {
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -87,15 +168,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1rem;
   position: absolute;
   left: 0;
-  bottom: 22rem;
+  bottom: 19rem;
 }
 
 .header__socials::after {
   content: "";
-  width: 1px;
   height: 2rem;
   background: var(--color-primary);
 }
@@ -118,21 +198,32 @@ header {
 .scroll__down {
   position: absolute;
   right: -2.3rem;
-  bottom: 5rem;
+  bottom: 28rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
 }
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (min-width: 1024px) {
+  .hed {
+    margin-top: 70px;
+  }
+}
 @media screen and (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
   .header__container {
+    justify-content: space-around;
+    height: 100%;
+    position: relative;
+  }
+  .hed {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 100%;
-    position: relative;
   }
   header {
     height: 68vh;
