@@ -240,3 +240,54 @@ header {
     display: none;
   }
 }
+
+.det h5 {
+  font-size: 1.3rem;
+}
+.det h1 {
+  font-size: 2.5rem;
+}
+
+/* ================= AI button ================= */
+
+.btnas {
+  border: none;
+  width: 7em;
+  height: 4em;
+  border-radius: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1c1a1c;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+  fill: #aaaaaa;
+  transition: all 800ms ease;
+}
+
+.textas {
+  font-weight: 600;
+  color: #aaaaaa;
+  font-size: medium;
+}
+
+.btnas:hover {
+  background: linear-gradient(0deg, #f3cf7c97, #eace3f);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #ffbd17;
+  transform: translateY(-2px);
+}
+
+.btnas:hover .textas {
+  color: white;
+}
+
+.btnas:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}

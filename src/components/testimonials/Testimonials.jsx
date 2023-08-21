@@ -18,25 +18,25 @@ import "swiper/css/navigation";
 const data = [
   {
     avatar: AVTR1,
-    name: "Tina Snow",
+    name: "Google DSC",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec dui id mi dignissim posuere feugiat vitae eros. Fusce vitae neque sit amet enim iaculis placerat eget et est. Integer.",
   },
   {
     avatar: AVTR2,
-    name: "Shatta Wale",
+    name: "TedX",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec dui id mi dignissim posuere feugiat vitae eros. Fusce vitae neque sit amet enim iaculis placerat eget et est. Integer.",
   },
   {
     avatar: AVTR3,
-    name: "Kwame Despite",
+    name: "Scalar",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec dui id mi dignissim posuere feugiat vitae eros. Fusce vitae neque sit amet enim iaculis placerat eget et est. Integer.",
   },
   {
     avatar: AVTR4,
-    name: "William Simon",
+    name: "Software Development Student Club",
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec dui id mi dignissim posuere feugiat vitae eros. Fusce vitae neque sit amet enim iaculis placerat eget et est. Integer.",
   },

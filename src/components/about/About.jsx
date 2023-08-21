@@ -39,10 +39,17 @@ const About = () => {
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            As a self-taught data scientist, I have gained extensive knowledge
+            and practical experience in data analysis, machine learning, and
+            statistical modeling. I have expanded my skill set by working as a
+            full-stack developer, where I have honed my abilities in front-end.
+            My expertise in data science and development enables me to approach
+            problems from a holistic perspective, bridging the gap between data
+            analysis and software development. Through my passion for both data
+            science and software development, I am constantly striving to stay
+            up-to-date with the latest industry trends and techniques. I am
+            eager to leverage my skills and experience to contribute to exciting
+            and impactful projects.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

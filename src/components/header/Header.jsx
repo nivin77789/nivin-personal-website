@@ -30,7 +30,9 @@ const Header = () => {
             <h1>Nivin Mathew S</h1>
             <h5 className="text-light">Data Scientist</h5>
             <CTA />
+
             <HeaderSocials />
+
             <a href="#contact" className="scroll__down">
               Scroll Down
             </a>
