@@ -64,10 +64,12 @@ const Portfolio = () => {
         {data.map(({ id, image, title, github, demo }) => {
           return (
             <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={image} alt="" />
+              <div className="top-club">
+                <div className="portfolio__item-image">
+                  <img src={image} alt="" />
+                </div>
+                <h3>{title}</h3>
               </div>
-              <h3>{title}</h3>
               <div className="portfolio__item-cta">
                 <a
                   href={github}

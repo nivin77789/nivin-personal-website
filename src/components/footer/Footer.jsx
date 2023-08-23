@@ -33,7 +33,6 @@ const Footer = () => {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-
       <div className="footer__socials">
         <a
           href="https://www.linkedin.com/in/nivin-mathew-s-5380bb1a5/"
@@ -57,6 +56,7 @@ const Footer = () => {
           <IoLogoTwitter />
         </a>
       </div>
+      p-=[-]{" "}
     </footer>
   );
 };

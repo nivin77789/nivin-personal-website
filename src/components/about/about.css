@@ -1,11 +1,11 @@
 .sub-right {
   color: white;
-  background-color: #262626;
+  background-color: #000000;
   border-radius: 10px;
 }
 .img-d {
   border: 1px solid var(--color-primary-variant);
-  background-color: #262626;
+  background-color: #000000;
   border-radius: 30px;
   padding: 10px;
 }
@@ -20,7 +20,10 @@
   border: 1px solid var(--color-primary-variant);
   border-radius: 20px;
 }
-
+.sub-righ img {
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+}
 /* ================= MUM S) ================= */
 
 .about__container {
