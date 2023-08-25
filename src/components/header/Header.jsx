@@ -36,7 +36,7 @@ const Header = () => {
             <HeaderSocials />
 
             <a href="#contact" className="scroll__down">
-              Scroll Down
+              Scroll Downs
             </a>
           </div>
 
