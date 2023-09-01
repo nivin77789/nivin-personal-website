@@ -3,12 +3,10 @@ import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
-import VantaNetBackground from "./VantaNetBackground";
 
 const Header = () => {
   return (
     <header>
-      <VantaNetBackground />
       <div className="container header__container">
         <div className="navbar">
           <div className="looader"></div>{" "}
