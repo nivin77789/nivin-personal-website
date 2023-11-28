@@ -22,7 +22,7 @@ const data = [
     image: IMG2,
     title: "Responsive website using react",
     github: "https://github.com/nivin77789/revolve-website",
-    demo: "https://revolve-website-nr2uf8pbe-nivin77789.vercel.app/",
+    demo: "https://stratusai.in",
   },
   {
     id: 3,
