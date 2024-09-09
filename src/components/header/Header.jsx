@@ -44,7 +44,6 @@ const Header = () => {
               <img src={ME} alt="me" />
             </div>
 
-            <div className="loader"></div>
           </div>
         </div>
       </div>
