@@ -39,11 +39,12 @@ const Header = () => {
           </div>
 
           <div className="me">
-            <div className="me-top">
+            <div className="me-topt">
               {" "}
               <img src={ME} alt="me" />
             </div>
 
+            <div className="loader"></div>
           </div>
         </div>
       </div>
