@@ -2,8 +2,8 @@ import React from "react";
 import "./testimonials.css";
 import AVTR1 from "../../assets/avartar1.jpg";
 import AVTR2 from "../../assets/avartar2.jpg";
-import AVTR3 from "../../assets/avartar3.jpg";
-import AVTR4 from "../../assets/avartar4.jpg";
+import AVTR3 from "../../assets/images.jpeg";
+import AVTR4 from "../../assets/avartar3.jpg";
 
 // import Swiper core and required modules
 import { Pagination } from "swiper";
