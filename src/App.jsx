@@ -8,9 +8,13 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Gitabout from "./components/about/Git-about";
+import Background from "./components/background/Background";
+import Chatbot from "./components/chatbot/Chatbot";
 const App = () => {
   return (
     <>
+      <Background />
+      <Chatbot />
       <Header />
       <Nav />
       <About />
