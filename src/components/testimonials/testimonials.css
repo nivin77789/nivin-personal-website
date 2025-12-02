@@ -13,11 +13,15 @@
 }
 
 .testimonial {
-  background: var(--color-bg-variant);
+  background: rgba(33, 32, 30, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
   user-select: none;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 .client__review {
@@ -58,11 +62,9 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-  background: linear-gradient(
-    to bottom right,
-    var(--primary),
-    var(--secondary)
-  );
+  background: linear-gradient(to bottom right,
+      var(--primary),
+      var(--secondary));
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item h5,
@@ -85,11 +87,9 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  background: linear-gradient(
-    to bottom right,
-    var(--primary),
-    var(--secondary)
-  );
+  background: linear-gradient(to bottom right,
+      var(--primary),
+      var(--secondary));
   border-radius: 60px;
   font-size: 18px;
   transition: 0.5s;
@@ -97,12 +97,11 @@
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-  background: linear-gradient(
-    to bottom right,
-    var(--secondary),
-    var(--primary)
-  );
+  background: linear-gradient(to bottom right,
+      var(--secondary),
+      var(--primary));
 }
+
 .testimonials__container {
   position: relative;
   padding: 2rem;

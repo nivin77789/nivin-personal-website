@@ -1,5 +1,7 @@
 .chatbot-container {
     position: fixed;
+    /* Changed back to fixed for floating effect */
+    /* Changed from fixed to absolute */
     bottom: 2rem;
     right: 2rem;
     z-index: 1000;
@@ -22,6 +24,22 @@
     transition: var(--transition);
     font-size: 1.5rem;
     border: none;
+    animation: float 3s ease-in-out infinite;
+    /* Added floating animation */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .chatbot-toggle:hover {

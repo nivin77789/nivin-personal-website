@@ -27,6 +27,8 @@
 
 html {
   scroll-behavior: smooth;
+  background: #000000;
+  /* Ensure base is black */
 }
 
 ::-webkit-scrollbar {
@@ -35,11 +37,10 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: transparent;
-  /* Changed from var(--color-bg) to show Background component */
+  background: #000000;
+  /* Ensure body is black */
   color: var(--color-white);
   line-height: 1.7;
-  /* background-image: url(../src/assets/bg-texture.png); */
 }
 
 /* ================= GENERAL STYLES ================= */
@@ -136,4 +137,71 @@ img {
   section>h2 {
     margin-bottom: 2rem;
   }
+}
+
+/* ================= SCROLL ANIMATIONS ================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.8s ease-out;
+}
+
+.zoom-in.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered delays for children */
+.stagger-1 {
+  transition-delay: 100ms;
+}
+
+.stagger-2 {
+  transition-delay: 200ms;
+}
+
+.stagger-3 {
+  transition-delay: 300ms;
+}
+
+.stagger-4 {
+  transition-delay: 400ms;
+}
+
+.stagger-5 {
+  transition-delay: 500ms;
 }

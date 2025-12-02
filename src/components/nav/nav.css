@@ -1,39 +1,78 @@
 nav {
-  background: rgba(0, 0, 0, 0.3);
-  width: max-content;
-  display: block;
-  padding: 0.7rem 1.7rem;
-  z-index: 2;
+  background: rgba(20, 20, 20, 0.65);
+  /* Dark glass background */
+  width: 88%;
+  /* Responsive width */
+  max-width: 400px;
+  /* Max width for larger phones */
+  display: flex;
+  justify-content: space-between;
+  /* Evenly space icons */
+  align-items: center;
+  padding: 0.8rem 2rem;
+  z-index: 100;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   bottom: 2rem;
-  display: flex;
-  gap: 0.8rem;
+  /* Floating from bottom */
+  gap: 0;
+  /* Reset gap */
   border-radius: 3rem;
-  backdrop-filter: blur(15px);
+  /* Pill shape */
+  backdrop-filter: blur(20px);
+  /* Strong blur */
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Subtle border */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  /* Depth shadow */
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(-50%) translateY(0px);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0px);
+  }
 }
 
 nav a {
   background: transparent;
-  padding: 0.9rem;
+  padding: 0.8rem;
   border-radius: 50%;
   display: flex;
-  color: var(--color-light);
-  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.5);
+  /* Inactive color */
+  font-size: 1.4rem;
+  /* Larger icons */
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transform: translateY(-3px);
 }
 
 nav a.active {
-  background: var(--color-primary);
-  color: var(--color-bg);
+  background: rgba(255, 255, 255, 0.1);
+  /* Subtle active background */
+  color: var(--color-primary);
+  /* Active color */
+  box-shadow: 0 0 20px rgba(254, 179, 20, 0.2);
+  /* Soft glow */
 }
+
+/* Hide on desktop if the main navbar is used */
 @media screen and (min-width: 1024px) {
   nav {
-    position: sticky;
-    top: 54rem;
+    display: none;
   }
 }

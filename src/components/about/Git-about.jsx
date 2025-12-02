@@ -7,18 +7,36 @@ const Gitabout = () => {
       <div className="container abouts__container">
         <div className="abouts__mes">
           <div className="right">
-            <div className="sub-right">
-              <img
-                src={`https://leetcard.jacoblin.cool/nivin77789?ext=activity`}
-                alt="LeetCode Stats"
-              />
+            <div className="mac-window">
+              <div className="mac-header">
+                <div className="mac-buttons">
+                  <span className="mac-btn close"></span>
+                  <span className="mac-btn minimize"></span>
+                  <span className="mac-btn expand"></span>
+                </div>
+                <div className="mac-title">leetcode_stats — zsh</div>
+              </div>
+              <div className="mac-content">
+                <img
+                  src={`https://leetcard.jacoblin.cool/nivin77789?ext=activity`}
+                  alt="LeetCode Stats"
+                />
+              </div>
             </div>
           </div>
         </div>
         <div className="abouts__conten">
           <div className="right">
-            <div className="sub-righ">
-              <div className="img-d">
+            <div className="mac-window">
+              <div className="mac-header">
+                <div className="mac-buttons">
+                  <span className="mac-btn close"></span>
+                  <span className="mac-btn minimize"></span>
+                  <span className="mac-btn expand"></span>
+                </div>
+                <div className="mac-title">github_stats — zsh</div>
+              </div>
+              <div className="mac-content img-d">
                 <img
                   src={`https://github-readme-streak-stats.herokuapp.com?user=nivin77789&theme=vision-friendly-dark&hide_border=true&date_format=M%20j%5B%2C%20Y%5D`}
                   alt="GitHub Streak Stats"
