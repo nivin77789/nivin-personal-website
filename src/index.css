@@ -27,8 +27,8 @@
 
 html {
   scroll-behavior: smooth;
-  background: #000000;
-  /* Ensure base is black */
+  background: transparent;
+  /* Allow background component to show */
 }
 
 ::-webkit-scrollbar {
@@ -37,10 +37,19 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #000000;
-  /* Ensure body is black */
+  background: linear-gradient(135deg, #050505 0%, #1a1205 50%, #2a1d0a 100%);
+  background-attachment: fixed;
   color: var(--color-white);
   line-height: 1.7;
+}
+
+/* Ensure content sits above the background orbs */
+header,
+nav,
+section,
+footer {
+  position: relative;
+  z-index: 1;
 }
 
 /* ================= GENERAL STYLES ================= */

@@ -45,6 +45,10 @@ const Gitabout = () => {
                   src={`https://github-readme-stats.vercel.app/api?username=nivin77789&show_icons=true&theme=vision-friendly-dark&hide_border=true`}
                   alt="GitHub Stats"
                 />
+                <img
+                  src="https://api.githubtrends.io/user/svg/nivin77789/langs"
+                  alt="GitHub Trends"
+                />
               </div>
             </div>
           </div>

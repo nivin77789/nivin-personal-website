@@ -15,7 +15,7 @@ nav {
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: 2rem;
+  bottom: 1rem;
   /* Floating from bottom */
   gap: 0;
   /* Reset gap */
@@ -37,7 +37,7 @@ nav {
   }
 
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-6px);
   }
 
   100% {

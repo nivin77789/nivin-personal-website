@@ -10,10 +10,11 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background: #000000;
+  background: transparent;
+  /* Gradient is now on body */
   overflow: hidden;
   z-index: 0;
-  /* Changed from -1 to 0 to ensure visibility */
+  /* Orbs sit on top of body bg, behind content */
   pointer-events: none;
   /* Allow clicks to pass through */
 }
@@ -28,10 +29,13 @@
   animation-duration: 45s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  opacity: 0.4;
+  /* Make orbs more subtle */
 }
 
 .background span:nth-child(1) {
-  color: #5c0f26;
+  color: #feb314;
+  /* Gold */
   top: 49%;
   left: 64%;
   animation-duration: 40s;
@@ -41,7 +45,8 @@
 }
 
 .background span:nth-child(2) {
-  color: #5c0f26;
+  color: #feb314;
+  /* Gold */
   top: 36%;
   left: 66%;
   animation-duration: 29s;
@@ -51,7 +56,8 @@
 }
 
 .background span:nth-child(3) {
-  color: #1f054d;
+  color: #b67f0a;
+  /* Dark Gold */
   top: 24%;
   left: 28%;
   animation-duration: 54s;
@@ -61,7 +67,8 @@
 }
 
 .background span:nth-child(4) {
-  color: #1f054d;
+  color: #b67f0a;
+  /* Dark Gold */
   top: 50%;
   left: 27%;
   animation-duration: 37s;
@@ -71,7 +78,8 @@
 }
 
 .background span:nth-child(5) {
-  color: #5c0f26;
+  color: #feb314;
+  /* Gold */
   top: 67%;
   left: 7%;
   animation-duration: 38s;
