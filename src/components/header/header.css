@@ -339,7 +339,7 @@ header {
 .nav__toggle {
   display: none;
   /* Hidden on desktop */
-  position: absolute;
+  position: fixed;
   top: 0.6rem;
   right: 1.5rem;
   z-index: 1000;

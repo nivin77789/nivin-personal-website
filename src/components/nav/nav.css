@@ -10,10 +10,11 @@ nav {
   /* Evenly space icons */
   align-items: center;
   padding: 0.8rem 2rem;
-  z-index: 100;
+  z-index: 1000;
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   bottom: 2rem;
   /* Floating from bottom */
   gap: 0;
@@ -32,15 +33,15 @@ nav {
 
 @keyframes float {
   0% {
-    transform: translateX(-50%) translateY(0px);
+    transform: translateY(0px);
   }
 
   50% {
-    transform: translateX(-50%) translateY(-10px);
+    transform: translateY(-10px);
   }
 
   100% {
-    transform: translateX(-50%) translateY(0px);
+    transform: translateY(0px);
   }
 }
 
